@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        audio{
+            width:50%;
+            padding-top: 50px;;
+            
+        }
+        video{
+            width:50%;
+            height:50%;
+            padding-top: 50px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here is the audio</h1>
+    <center><audio controls>
+        <source src="">
+    </audio></center>
+    <h1>here is the sample video</h1>
+    <center><video controls autoplay muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+    </video></center>
+</body>
+</html>
