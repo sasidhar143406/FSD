@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .
+        div{
+            border:4px solid rgb(73, 120, 239);
+            background-color: rgb(229, 229, 229);
+            margin-left: 50%;
+            margin-right: 30%;
+            padding:10px;
+        }
+        .box{
+            text-align: center;
+            padding:10px;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <h1>CSS Box Model Demonstration</h1>
-    <div class="box">
+    <div>
         <p>Margin</p>
         <p>Border</p>
-        <p>This is the content inside the box!</p>
+        <p class="box">This is the content line inside the box</p>
         <p>Padding</p>
     </div>
+    <p>This example demonstrates the CSS box model:</p>
+    <ul>
+        <li><p><b>Content:</b>The white area in the center where the text is displayed</p></li>
+        <li><p><b>Padding:</b>The space between the content and border(light grey)</p></li>
+        <li><p><b>Border:</b>The solid blue line surronded the box</p></li>
+        <li><p><b>Margin:</b>The space outside the border(moves the box away from other elements).</p></li>
+    </ul>
 </body>
 </html>
