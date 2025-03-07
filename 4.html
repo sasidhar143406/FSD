@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #select{
+            color:red;
+        }
+        .exam{
+            background-color: yellow;
+            font-style: italic;
+        }
+        div p{
+            color:green;
+        }
+        div>p{
+            font-weight: bold;
+        }
+    
+        h2+p{
+            color:orange;
+        }
+        *{
+            font-family: arial;
+        }
+        a:hover{
+            color:red;
+        }
+        p::first-letter{
+            color:brown;
+            font-size: 25px;
+        }
+        h2,p{
+            text-align: center;
+        }
+         h2~p{
+            font-style: italic;
+         }
+         p::after{
+            content:"(read more...)";
+            color:grey;
+         }
+         p:first-child{
+            background-color: lightblue;
+         }
+         input[type="text"]{
+            border:2px solid green;
+            Padding:5px;
+         }
+         [title]{
+            color:orange;
+            text-decoration: underline;
+         }
+         input:focus{
+            border:2px solid blue;
+         }
+    </style>
+</head>
+<body>
+    <h1 style="color:blue;">Simple Selectors</h1>
+    <p id="select">This is an id selector example</p>
+    <p class="exam">This is an class selector example</p>
+    <h1 style="text-align: center;">Combinator Selectors</h1>
+    <div>
+        <p>This para is inside a div descendent selector</p>
+        <p>This is a direct child para(child selector)</p>
+    </div>
+    <h2>
+        <p>This para comes after h2(general sibling selector)</p>
+        <p>Pseudo class& pseudo-element selectors</p>
+        
+    </h2>
+    <a href="#">hover this link</a>
+    <p>First letter is styled with a psuedo element</p>
+    <input type="text" placeholder="Click here and see the effect">
+    <h1>Attribute Selectors </h1>
+    <p title="ful stack development">This para has a title atribute</p>
+    <input type="text" placeholder="Styled input field">
+
+    
+
+</body>
+</html>
